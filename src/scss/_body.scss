@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-bottom: 20rem;
+}
+
+.container {
+    margin-top: 5rem;
+}
+
+.container h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid black;
+    width: 20%;
+    margin: 0 auto 4rem auto
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}

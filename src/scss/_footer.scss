@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

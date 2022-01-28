@@ -1,55 +1,85 @@
 @use './variants/colors' as *;
-.app-bar{
-    padding:1rem;
-   
-    ul{
-        display:flex;
+.app-bar {
+    padding: 1rem;
+    ul {
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    background-color: black;
 }
 
-.logo-icon{
-    width:32px;
+.logo-icon {
+    width: 32px;
 }
 
-.brand-icon{
+.brand-icon {
     text-align: center;
-    width:192px;
-    font-size:0.85rem;
-    p{
+    width: 192px;
+    font-size: 0.85rem;
+    p {
         padding-left: 0.5rem;
-        margin-bottom:0.25rem;
+        margin-bottom: 0.25rem;
     }
 }
-.mobile-menu-icon{
-    width:20px;
+
+.mobile-menu-icon {
+    width: 20px;
 }
 
-.site-links{
-    display:flex;
+.site-links {
+    display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.content-page-app-bar{
-    padding:1rem;
-    display:flex;
+.content-page-app-bar {
+    padding: 1rem;
+    display: flex;
     justify-content: space-between;
-    box-shadow: 0 0 5px 0  $grey-400;
+    box-shadow: 0 0 5px 0 $grey-400;
     background-color: white;
-    div{
-        gap:0.25rem;
-        display:flex;
+    div {
+        gap: 0.25rem;
+        display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width:28px;
+        img {
+            width: 28px;
         }
-        h2{
-           width:max-content;
+        h2 {
+            width: max-content;
         }
     }
 }
- 
 
+.menu-items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 50%;
+}
+
+.app-bar ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-items a {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+}
+
+.menu-items a:hover {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.sneakerheadz-logo img {
+    width: 20%;
+    margin-left: 2rem;
+}

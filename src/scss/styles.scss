@@ -2,9 +2,12 @@
  @use 'ui';
  @use 'appbar';
  @use 'headers';
- @use 'intro_page';
- @use 'crud_pages';
+ @use 'body';
+ @use 'cards';
+ @use 'stickyCart';
+ @use 'aboutUs';
  @use 'write';
- 
-
- 
+ @use 'crud_pages';
+ @use 'gallery';
+ @use 'footer';
+ @use 'addsneaker';

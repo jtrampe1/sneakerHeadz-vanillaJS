@@ -23,13 +23,13 @@
     <nav class="app-bar">
         <ul>
             <li class="sneakerheadz-logo">
-                <img src="./favicons/logo.png" alt="SneakerHeadz Logo">
+                <a href="index.html"><img src="./favicons/logo1.png" alt="SneakerHeadz Logo"></a>
             </li>
 
             <div class="menu-items">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Contact</a></li>
             </div>
 
@@ -38,17 +38,18 @@
     </nav>
 
     <header class="page-header">
-        <h1>SneakerHeadz</h1>
-        <p>The store for sneaker headz</p>
-        <a href="#main" class="header-btn">SHOP NOW</a>
+        <h1>Resell Your Sneakerz</h1>
+        <a href="#main" class="header-btn">ADD NOW</a>
     </header>
 
 
-    <main class="main">
+    <main class="main" id="main">
 
-        <form id="sneakerForm" class="add-new-property">
+        <form id="sneakerForm" class="add-new-sneaker">
 
-            <div class="property-image form-control">
+            <h2>Send Your Sneaker</h2>
+
+            <div class="sneaker-image form-control">
                 <div class="display">
                     <img src="static/images/j1-banned.png" alt="Sneaker Image Placeholder">
                 </div>
@@ -84,6 +85,13 @@
         </form>
 
     </main>
+
+    <footer>
+        <div>
+            <img src="./favicons/logo1.png" alt="SneakerHeadz Logo">
+            <p>Copyrights 2022 - All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 
 </html>

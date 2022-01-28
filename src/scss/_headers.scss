@@ -1,37 +1,62 @@
 @use 'variants' as *;
-
-.page-header{
+.page-header {
     padding: 1rem 0 0;
     text-align: center;
     color: $slate-900;
-  
-    h1{
-   
-        font-size:2.75rem;
+    h1 {
+        font-size: 2.75rem;
     }
-    p:first-of-type{
-        font-size:1.25rem;
+    p:first-of-type {
+        font-size: 1.25rem;
         font-weight: bold;
     }
-    p{
+    p {
         color: $slate-500;
-       
     }
- 
-   
 }
 
-@media(min-width:900px){
-    .page-header{
+@media(min-width:900px) {
+    .page-header {
         padding: 2rem 0 0;
         text-align: center;
-      
-        h1{
-            color:rgb(27, 17, 17);
-            font-size:3.75rem;
+        h1 {
+            color: rgb(27, 17, 17);
+            font-size: 3.75rem;
         }
-       
-        
-       
-    }  
+    }
+}
+
+.page-header {
+    background: linear-gradient(to bottom, rgba(117, 0, 0, 0.644), rgba(0, 0, 0, 0.73)), url(../static/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-header h1 {
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.header-btn {
+    width: 10%;
+    padding: 1rem 0;
+    margin: 3rem auto;
+    background-color: white;
+    color: black;
+}
+
+.header-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
+
+.page-header h1,
+.page-header p {
+    color: white;
 }

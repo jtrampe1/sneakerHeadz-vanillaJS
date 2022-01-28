@@ -1,9 +1,9 @@
 // Sneakers Template
 
-function sneakerTemplate({sneakerName,key,sneakerPrice,imagePath}){
+function sneakerTemplate({ sneakerName, key, sneakerPrice, imageUrl }) {
     const template = `
     <div class="card" data-key="${key}">
-        <img src="${imagePath}" alt="${sneakerName}">
+        <img src="${imageUrl}" alt="${sneakerName}">
         <h3>${sneakerName}</h3>
         <h4>$${sneakerPrice}</h4>
         <a href="#">BUY</a>
@@ -14,4 +14,4 @@ function sneakerTemplate({sneakerName,key,sneakerPrice,imagePath}){
     return element
 }
 
-export {sneakerTemplate}
+export { sneakerTemplate }

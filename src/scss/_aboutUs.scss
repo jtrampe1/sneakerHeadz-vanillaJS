@@ -1,0 +1,28 @@
+.about-us {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us h3 {
+    font-size: 1.4rem;
+    color: red;
+    font-weight: bold;
+}
+
+.about-info {
+    width: 80%;
+    margin: 2rem auto 7rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 4px black;
+    display: flex;
+    align-items: center;
+}
+
+.about-info img {
+    width: 40%;
+}
+
+.about-info div {
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,21 @@
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 0 4px black;
+}
+
+.gallery-container h3 {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
