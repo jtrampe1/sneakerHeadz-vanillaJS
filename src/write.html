@@ -30,7 +30,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Checkout</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="write.html">Resell</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
             </div>
 
 
@@ -45,24 +46,26 @@
 
     <main class="main" id="main">
 
-        <form id="sneakerForm" class="add-new-sneaker">
+        <div class="addSneaker-container">
 
-            <h2>Send Your Sneaker</h2>
+            <form id="sneakerForm" class="add-new-sneaker">
 
-            <div class="sneaker-image form-control">
-                <div class="display">
-                    <img src="static/images/j1-banned.png" alt="Sneaker Image Placeholder">
+                <h2>Send Your Sneaker</h2>
+
+                <div class="sneaker-image form-control">
+                    <div class="display">
+                        <img src="static/images/j1-banned.png" alt="Sneaker Image Placeholder">
+                    </div>
+                    <label for="sneakerImage">Select image</label>
+                    <input type="file" id="sneakerImage" style="display:none" class="select-file" accept=".jpg, .png, .jpeg, .webp">
                 </div>
-                <label for="sneakerImage">Select image</label>
-                <input type="file" id="sneakerImage" style="display:none" class="select-file" accept=".jpg, .png, .jpeg, .webp">
-            </div>
 
-            <div class="sneaker-name form-control">
-                <label for="sneakerName">Sneaker Name</label>
-                <input id="sneakerName" type="text" placeholder="Jordan 1">
-            </div>
+                <div class="sneaker-name form-control">
+                    <label for="sneakerName">Sneaker Name</label>
+                    <input id="sneakerName" type="text" placeholder="Jordan 1">
+                </div>
 
-            <!-- <div class="sneaker-size form-control">
+                <!-- <div class="sneaker-size form-control">
                 <label for="sneakerSize">Sneaker Size (Mens US)</label>
                 <select id="sneakerSize" name="sneakerSize">
                     <option value="7">7</option>
@@ -73,16 +76,18 @@
                 </select>
             </div> -->
 
-            <div class="sneaker-price form-control">
-                <label for="sneakerPrice">Sneaker Price</label>
-                <input id="sneakerPrice" type="text" placeholder="123">
-            </div>
+                <div class="sneaker-price form-control">
+                    <label for="sneakerPrice">Sneaker Price</label>
+                    <input id="sneakerPrice" type="text" placeholder="123">
+                </div>
 
-            <div class="submit-button form-control">
-                <button type="submit">Add Sneaker</button>
+                <div class="submit-button form-control">
+                    <button type="submit" class="submit">Add Sneaker</button>
 
-            </div>
-        </form>
+                </div>
+            </form>
+
+        </div>
 
     </main>
 

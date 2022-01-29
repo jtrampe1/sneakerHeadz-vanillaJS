@@ -427,9 +427,13 @@ body {
 
 .submit {
   width: 100%;
-  background-color: #0284c7;
+  background-color: #9f1239;
   box-shadow: none;
   color: white;
+}
+
+.submit:hover {
+  background-color: #881337;
 }
 
 .button-small {
@@ -442,6 +446,58 @@ body {
   background-color: red;
   padding: 1rem 2rem;
   border-radius: 5px;
+}
+
+input {
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 1px #d6d3d1;
+  padding: 0.25rem 1rem;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+label {
+  font-size: 1rem;
+  color: #52525b;
+}
+
+.delete, .update, .write, .read {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 #94a3b8;
+  outline: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-align: center;
+}
+
+.read {
+  display: inline-block;
+  color: #f43f5e;
+  box-shadow: 0 0 3px 0 #f43f5e;
+}
+
+.write {
+  display: inline-block;
+  color: #9333ea;
+  box-shadow: 0 0 3px 0 #9333ea;
+}
+
+.update {
+  display: inline-block;
+  color: #16a34a;
+  box-shadow: 0 0 3px 0 #16a34a;
+}
+
+.delete {
+  display: inline-block;
+  color: #f97316;
+  box-shadow: 0 0 3px 0 #f97316;
 }
 
 .app-bar {
@@ -504,33 +560,49 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  width: 50%;
 }
 
-.app-bar ul {
-  width: 80%;
-  margin: 0 auto;
+.sneakerheadz-logo img {
+  width: 50%;
+  margin-left: 2rem;
 }
 
 .menu-items a {
   color: white;
-  font-size: 1.3rem;
-  padding: 1rem 2rem;
 }
 
-.menu-items a:hover {
-  color: white;
-  text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0);
-  background-color: red;
-  border-radius: 5px;
-}
+@media screen and (min-width: 900px) {
+  .menu-items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    width: 50%;
+  }
 
-.sneakerheadz-logo img {
-  width: 20%;
-  margin-left: 2rem;
-}
+  .app-bar ul {
+    width: 80%;
+    margin: 0 auto;
+  }
 
+  .menu-items a {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+
+  .menu-items a:hover {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: red;
+    border-radius: 5px;
+  }
+
+  .sneakerheadz-logo img {
+    width: 20%;
+    margin-left: 2rem;
+  }
+}
 .page-header {
   padding: 1rem 0 0;
   text-align: center;
@@ -569,16 +641,9 @@ body {
 }
 
 .page-header h1 {
-  font-size: 7rem;
+  font-size: 3rem;
+  color: white;
   font-weight: bold;
-}
-
-.header-btn {
-  width: 10%;
-  padding: 1rem 0;
-  margin: 3rem auto;
-  background-color: white;
-  color: black;
 }
 
 .header-btn:hover {
@@ -587,11 +652,33 @@ body {
   background-color: red;
 }
 
+.header-btn {
+  width: 50%;
+  padding: 1rem 0;
+  margin: 3rem auto;
+  background-color: white;
+  color: black;
+}
+
 .page-header h1,
 .page-header p {
   color: white;
 }
 
+@media screen and (min-width: 900px) {
+  .page-header h1 {
+    font-size: 7rem;
+    font-weight: bold;
+  }
+
+  .header-btn {
+    width: 10%;
+    padding: 1rem 0;
+    margin: 3rem auto;
+    background-color: white;
+    color: black;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -617,29 +704,20 @@ hr {
   margin: 0 auto 4rem auto;
 }
 
-.main-content {
-  display: flex;
-  align-items: flex-start;
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
+@media screen and (min-width: 900px) {
+  .main-content {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
 }
-
 /* cards */
-.card-container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
 .card {
   padding: 4rem 3rem;
   box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.8), 0 0px 3px #000000;
   text-align: center;
-  width: 22%;
   margin-bottom: 3rem;
 }
 
@@ -668,18 +746,33 @@ hr {
   font-weight: bold;
 }
 
+@media screen and (min-width: 900px) {
+  .card-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .card {
+    padding: 4rem 3rem;
+    box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.8), 0 0px 3px #000000;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 3rem;
+  }
+}
 .sticky-cart {
   background-color: black;
   padding: 3rem;
   color: white;
-  width: 20%;
   margin-top: 2rem;
   box-sizing: border-box;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 1%;
   display: flex;
   flex-direction: column;
+  border-radius: 4px;
 }
 
 .sticky-cart h4 {
@@ -714,6 +807,22 @@ hr {
   justify-content: flex-end;
 }
 
+@media screen and (min-width: 900px) {
+  .sticky-cart {
+    background-color: black;
+    padding: 3rem;
+    color: white;
+    width: 20%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+  }
+}
 .about-us {
   width: 90%;
   margin: 0 auto;
@@ -881,22 +990,31 @@ footer {
 }
 
 footer img {
-  width: 10%;
+  width: 30%;
 }
 
 footer div {
-  width: 30%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
 
+@media screen and (min-width: 900px) {
+  footer img {
+    width: 10%;
+  }
+
+  footer div {
+    width: 30%;
+  }
+}
 .add-product {
   text-align: center;
   margin: 5rem 0 0 0;
   border-top: 1px solid white;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .add-product a {
@@ -912,5 +1030,12 @@ footer div {
 .add-product h3 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+.addSneaker-container {
+  width: 50%;
+  margin: 3rem auto;
+  box-shadow: 0 0 4px red;
+  padding: 1rem 0 3rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

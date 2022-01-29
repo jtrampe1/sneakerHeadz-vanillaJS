@@ -38,16 +38,9 @@
 }
 
 .page-header h1 {
-    font-size: 7rem;
+    font-size: 3rem;
+    color: white;
     font-weight: bold;
-}
-
-.header-btn {
-    width: 10%;
-    padding: 1rem 0;
-    margin: 3rem auto;
-    background-color: white;
-    color: black;
 }
 
 .header-btn:hover {
@@ -56,7 +49,29 @@
     background-color: red;
 }
 
+.header-btn {
+    width: 50%;
+    padding: 1rem 0;
+    margin: 3rem auto;
+    background-color: white;
+    color: black;
+}
+
 .page-header h1,
 .page-header p {
     color: white;
+}
+
+@media screen and (min-width:900px) {
+    .page-header h1 {
+        font-size: 7rem;
+        font-weight: bold;
+    }
+    .header-btn {
+        width: 10%;
+        padding: 1rem 0;
+        margin: 3rem auto;
+        background-color: white;
+        color: black;
+    }
 }

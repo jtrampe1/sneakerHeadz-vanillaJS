@@ -20,9 +20,13 @@ button {
 .submit {
     @extend %button;
     width: 100%;
-    background-color: $sky-600;
+    background-color: $rose-800;
     box-shadow: none;
     color: white;
+}
+
+.submit:hover {
+    background-color: $rose-900;
 }
 
 .button-small {
