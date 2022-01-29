@@ -27,8 +27,9 @@ document.querySelector("#sneakerImage").addEventListener("change", onImageSelect
     async function uploadNewSneaker() {
         const sneakerName = document.querySelector('#sneakerName').value.trim();
         const file = document.querySelector('#sneakerImage').files[0]
-        const price = document.querySelector('#sneakerPrice').value.trim();
-        sneakerPrice = '$' + price;
+        const sneakerPrice = document.querySelector('#sneakerPrice').value.trim();
+        const size = document.querySelector('#size');
+  
 
       
        
@@ -52,7 +53,8 @@ document.querySelector("#sneakerImage").addEventListener("change", onImageSelect
           imageUrl,
           storagePath,
           sneakerName,
-          sneakerPrice
+          sneakerPrice,
+          size
         })
         
     }
