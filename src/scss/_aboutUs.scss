@@ -10,19 +10,24 @@
     font-weight: bold;
 }
 
-.about-info {
-    width: 80%;
-    margin: 2rem auto 7rem auto;
-    padding: 2rem;
-    box-shadow: 0 0 4px black;
-    display: flex;
-    align-items: center;
+.about-info div {
+    margin-bottom: 2rem;
 }
 
 .about-info img {
-    width: 40%;
+    margin-bottom: 3rem;
 }
 
-.about-info div {
-    margin-bottom: 3rem;
+@media screen and (min-width:900px) {
+    .about-info img {
+        width: 40%;
+    }
+    .about-info {
+        width: 80%;
+        margin: 2rem auto 7rem auto;
+        padding: 2rem;
+        box-shadow: 0 0 4px black;
+        display: flex;
+        align-items: center;
+    }
 }

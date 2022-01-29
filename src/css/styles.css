@@ -692,7 +692,7 @@ main {
 }
 
 .container h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
   font-weight: bold;
@@ -711,6 +711,10 @@ hr {
     width: 90%;
     margin: 0 auto;
     position: relative;
+  }
+
+  .container h2 {
+    font-size: 3rem;
   }
 }
 /* cards */
@@ -835,30 +839,30 @@ hr {
   font-weight: bold;
 }
 
-.about-info {
-  width: 80%;
-  margin: 2rem auto 7rem auto;
-  padding: 2rem;
-  box-shadow: 0 0 4px black;
-  display: flex;
-  align-items: center;
+.about-info div {
+  margin-bottom: 2rem;
 }
 
 .about-info img {
-  width: 40%;
-}
-
-.about-info div {
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 900px) {
+  .about-info img {
+    width: 40%;
+  }
+
+  .about-info {
+    width: 80%;
+    margin: 2rem auto 7rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 4px black;
+    display: flex;
+    align-items: center;
+  }
+}
 main {
   padding: 1rem;
-}
-
-.add-new-sneaker {
-  max-width: 400px;
-  margin: 0 auto;
 }
 
 .display {
@@ -870,8 +874,15 @@ main {
   -o-object-fit: fill;
      object-fit: fill;
   width: 100%;
-  height: 270px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: block;
+}
+
+.add-new-sneaker {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .sneaker-image label {
@@ -903,12 +914,30 @@ main {
 }
 
 .add-new-sneaker h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 4rem;
 }
 
+@media screen and (min-width: 900px) {
+  .display {
+    margin: 0 auto 1rem;
+    box-shadow: 0 0 1px 1px #d6d3d1;
+    border: 6px solid white;
+  }
+  .display img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 100%;
+    height: 270px;
+    display: block;
+  }
+
+  .add-new-sneaker h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
 .content-page-app-bar {
   padding: 1rem;
   display: flex;
@@ -1033,9 +1062,16 @@ footer div {
 }
 
 .addSneaker-container {
-  width: 50%;
+  width: 80%;
   margin: 3rem auto;
   box-shadow: 0 0 4px red;
-  padding: 1rem 0 3rem 0;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .addSneaker-container {
+    width: 50%;
+    padding: 1rem 0 3rem 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

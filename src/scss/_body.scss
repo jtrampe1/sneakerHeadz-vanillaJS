@@ -11,7 +11,7 @@ main {
 }
 
 .container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     padding: 1rem;
     font-weight: bold;
@@ -30,5 +30,8 @@ hr {
         width: 90%;
         margin: 0 auto;
         position: relative;
+    }
+    .container h2 {
+        font-size: 3rem;
     }
 }
