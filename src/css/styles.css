@@ -437,56 +437,11 @@ body {
   padding: 0.25rem 1rem;
 }
 
-input {
-  background-color: transparent;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 1px 1px #d6d3d1;
-  padding: 0.25rem 1rem;
-  font-size: 1.125rem;
-  width: 100%;
-}
-
-label {
-  font-size: 1rem;
-  color: #52525b;
-}
-
-.delete, .update, .write, .read {
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 0 3px 0 #94a3b8;
-  outline: none;
-}
-
-a, a:link, a:visited, a:hover, a:active {
-  text-align: center;
-}
-
-.read {
-  display: inline-block;
-  color: #f43f5e;
-  box-shadow: 0 0 3px 0 #f43f5e;
-}
-
-.write {
-  display: inline-block;
-  color: #9333ea;
-  box-shadow: 0 0 3px 0 #9333ea;
-}
-
-.update {
-  display: inline-block;
-  color: #16a34a;
-  box-shadow: 0 0 3px 0 #16a34a;
-}
-
-.delete {
-  display: inline-block;
-  color: #f97316;
-  box-shadow: 0 0 3px 0 #f97316;
+.card-btn {
+  color: white;
+  background-color: red;
+  padding: 1rem 2rem;
+  border-radius: 5px;
 }
 
 .app-bar {

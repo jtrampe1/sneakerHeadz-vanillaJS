@@ -6,7 +6,7 @@ function sneakerTemplate({ sneakerName, key, sneakerPrice, imageUrl }) {
         <img src="${imageUrl}" alt="${sneakerName}">
         <h3>${sneakerName}</h3>
         <h4>$${sneakerPrice}</h4>
-        <a href="#">BUY</a>
+        <a class="card-btn" href="#">BUY</a>
     </div>
     `
     const element = document.createRange().createContextualFragment(template).children[0]

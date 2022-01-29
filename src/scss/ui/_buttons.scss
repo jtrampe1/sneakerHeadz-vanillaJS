@@ -1,31 +1,39 @@
 @use './../variants/colors' as *;
-%button{
+%button {
     background-color: transparent;
     padding: 0.5rem 2rem;
-    border:none;
+    border: none;
     border-radius: 3px;
-    box-shadow: 0 0 1px 1px  $stone-300;
-    outline:none;
-    color:$stone-500;
+    box-shadow: 0 0 1px 1px $stone-300;
+    outline: none;
+    color: $stone-500;
 }
 
-button{
+button {
     @extend %button;
-}
-.button-small{
-    font-size:14px;
-}
-.submit{
-    @extend %button;
-    width:100%;
-   background-color: $sky-600;
-   box-shadow: none;
-   color:white;
 }
 
-.button-small{
+.button-small {
+    font-size: 14px;
+}
+
+.submit {
+    @extend %button;
+    width: 100%;
+    background-color: $sky-600;
+    box-shadow: none;
+    color: white;
+}
+
+.button-small {
     @extend button;
-    font-size:14px;
-    padding:0.25rem 1rem;
+    font-size: 14px;
+    padding: 0.25rem 1rem;
 }
 
+.card-btn {
+    color: white;
+    background-color: red;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
