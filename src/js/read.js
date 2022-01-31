@@ -21,4 +21,6 @@ async function pageInit(){
    
 }
 
-pageInit()
+
+
+export {pageInit}
