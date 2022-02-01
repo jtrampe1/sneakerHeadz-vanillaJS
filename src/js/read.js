@@ -12,14 +12,16 @@ async function pageInit(){
         
         const card = sneakerTemplate(sneaker)
         document.querySelector('.card-container').appendChild(card)
+ 
 
         return null
 
     })
-    
+       
 
-   
+
 }
+
 
 
 

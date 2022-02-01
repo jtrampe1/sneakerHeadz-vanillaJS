@@ -1,8 +1,6 @@
 {
     "name": "jim-hortons-vacations",
     "version": "1.0.0",
-    "description": "### Initialize Project Folder to Use NPM  - on the command line run the following command. ```npm    npm init ```",
-    "main": "index.js",
     "scripts": {
         "clean": "rm -rf node_modules .git .parcel-cache dist .DS_Store",
         "static": "cp -rf ./src/static   dist",
@@ -13,9 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "base-64": "^1.0.0",
         "firebase": "^9.6.3",
-        "nanoid": "^3.2.0",
         "parcel": "^2.2.1"
     },
     "devDependencies": {
