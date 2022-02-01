@@ -1,7 +1,8 @@
-import {ref as dataRef, get, set, update} from 'firebase/database';
-import {db} from '../libs/firebase/firebaseConfig';
-import {sneakerTemplate} from '../templates/sneakerTemplate';
+function addToCart(e){
+    const buyBtn = document.querySelector('.card-btn');
 
+    console.log(buyBtn)
+}
 
 
 
