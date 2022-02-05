@@ -43,7 +43,6 @@ function onDeleteSneaker(e){
     sessionStorage.setItem('key',key)
     // window.location.assign('delete.html')
 
-      
         console.log(key)    
         const removeSneakerRef = databaseRef(db, `sneakers/${key}`)
         remove(removeSneakerRef)

@@ -1,5 +1,5 @@
 {
-    "name": "jim-hortons-vacations",
+    "name": "sneakerheadz",
     "version": "1.0.0",
     "scripts": {
         "clean": "rm -rf node_modules .git .parcel-cache dist .DS_Store",
