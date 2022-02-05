@@ -28,11 +28,10 @@ document.querySelector("#sneakerImage").addEventListener("change", onImageSelect
         const sneakerName = document.querySelector('#sneakerName').value.trim();
         const file = document.querySelector('#sneakerImage').files[0]
         const sneakerPrice = document.querySelector('#sneakerPrice').value.trim();
-        const size = document.querySelector('#size');
-  
+        const size = document.querySelector('#size').value.trim();
 
-      
-       
+
+   
         // Set path to storage for the image
         const imageRef =     storageRef( storage, `sneakers/${file.name}`);
         // Set path to RTD for the image
@@ -50,13 +49,20 @@ document.querySelector("#sneakerImage").addEventListener("change", onImageSelect
         set(itemRef,{
           key:itemRef.key,
           sku:`snkrs${itemRef.key}`,
+          size,
           imageUrl,
           storagePath,
           sneakerName,
-          sneakerPrice,
-          size
+          sneakerPrice
+       
         })
-        
+        .then(()=>{
+          alert("Added To Sneakerz Store")
+        })
+        .catch((error)=>{
+          alert("Error. Try Again")
+        })
+
     }
 
    

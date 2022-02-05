@@ -1,11 +1,11 @@
  import { pageInit } from "./read";
- import {addToCart} from './utils/addToCart';
+ import {editSneaker} from './utils/editSneaker';
 
 
 
 //  Show all sneakers
 pageInit()
-addToCart()
+editSneaker()
 
 
 // addToCart()
