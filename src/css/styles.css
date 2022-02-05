@@ -704,6 +704,10 @@ hr {
   margin: 0 auto 4rem auto;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   .main-content {
     display: flex;
