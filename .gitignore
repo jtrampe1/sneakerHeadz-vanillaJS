@@ -12,7 +12,7 @@
 # Parcel Development Files
 /.parcel-cache
 /dist
-/public
+
 
 # OS Files
 .DS_Store
