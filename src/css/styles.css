@@ -750,6 +750,12 @@ hr {
   font-weight: bold;
 }
 
+.sneakerButtons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 @media screen and (min-width: 900px) {
   .card-container {
     width: 90%;
@@ -1042,9 +1048,6 @@ footer div {
 }
 .add-product {
   text-align: center;
-  margin: 5rem 0 0 0;
-  border-top: 1px solid white;
-  padding-top: 2rem;
 }
 
 .add-product a {

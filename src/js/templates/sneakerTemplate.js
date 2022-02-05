@@ -11,8 +11,10 @@ function sneakerTemplate({ sneakerName, key, sneakerPrice, imageUrl, size }) {
         <h3>${sneakerName}</h3>
         <p>Size (US MENS): ${size}</p>
         <h4>$${sneakerPrice}</h4>
-        <button id="editSneaker" class="card-btn" href="#" data-key="${key}">EDIT</button>
-        <button id="deleteSneaker" class="card-btn" href="#" data-key="${key}">DELETE</button>
+        <div class="sneakerButtons">
+            <button id="editSneaker" class="card-btn" href="#" data-key="${key}">EDIT</button>
+            <button id="deleteSneaker" class="card-btn" href="#" data-key="${key}">DELETE</button>
+        </div>
     </div>
     `
 
