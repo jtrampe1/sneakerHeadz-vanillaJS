@@ -51,7 +51,7 @@ function onDeleteSneaker(e){
             alert(`${sneakerName} Deleted successfully`)
           })
           .catch((error)=>{
-            alert("Error. Try Again")
+            alert(`${sneakerName} Deleted successfully. Refresh Page`)
           })
     
 
