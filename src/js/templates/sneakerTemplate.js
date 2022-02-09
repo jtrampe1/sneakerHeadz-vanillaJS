@@ -48,10 +48,10 @@ function onDeleteSneaker(e){
         remove(removeSneakerRef)
 
         .then(()=>{
-            alert(`${sneakerName} Deleted successfully`)
+            alert(`Deleted successfully`)
           })
           .catch((error)=>{
-            alert(`${sneakerName} Deleted successfully. Refresh Page`)
+            alert("Deleted successfully. Refresh Page")
           })
     
 
