@@ -48,7 +48,7 @@ function onDeleteSneaker(e){
         remove(removeSneakerRef)
 
         .then(()=>{
-            alert(`Deleted successfully`)
+            alert(`Deleted successfully. Refresh Page`)
           })
           .catch((error)=>{
             alert("Deleted successfully. Refresh Page")
